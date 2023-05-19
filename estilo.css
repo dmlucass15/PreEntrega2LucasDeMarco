@@ -138,17 +138,17 @@
        }
       
        .img1{
-          width:70%;
+          width:60%;
           height:70% ;
       
        }
       
        .img2{
-      width:70% ;
+      width:60% ;
       height: 70%;
        }
        .img3{
-          width:70% ;
+          width:60% ;
           height:70% ;
       
        }
@@ -235,6 +235,7 @@
 
 .productos{
       background-color: black;
+      width: 100%;
       display: block;
 }
 
@@ -244,20 +245,17 @@
       background-color: rgb(0, 0, 0);
       padding: 20px;
       display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(6, 200px);
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: repeat(3, 200px);
       grid-gap: 20px;
 }
 
-.contenedor-productos{
-      transition: box-shadow 0.1s ease-in-out;
-}
 
 .item1 {
-      width: 100%;
+      width: 300px;
       background-color: rgb(0, 0, 0);
       border: 5px solid white;
-      background-size: 75%;
+      background-size: 65%;
       background-position: center;
       background-repeat: no-repeat;
       background-image: url(imagenes.png/cambios1-0.png);
@@ -266,7 +264,7 @@
 }
 
 .item2 {
-      width: 100%;
+      width: 300px;
       background-color: rgb(0, 0, 0);
       border: 5px solid white;
       background-size: 75%;
@@ -278,7 +276,7 @@
   }
 
   .item3 {
-      width: 100%;
+      width: 300px;
       background-color: rgb(0, 0, 0);
       border: 5px solid white;
       background-size: 75%;
@@ -290,10 +288,10 @@
   }
 
   .item4 {
-      width: 100%;
+      width: 300px;
       background-color: rgb(0, 0, 0);
       border: 5px solid white;
-      background-size: 75%;
+      background-size: 90%;
       background-position: center;
       background-repeat: no-repeat;
       background-image: url(imagenes.png/cambios\ 4.png);
@@ -302,7 +300,7 @@
   }
 
   .item5 {
-      width: 100%;
+      width: 300px;
       background-color: rgb(0, 0, 0);
       border: 5px solid white;
       background-size: 75%;
@@ -314,7 +312,7 @@
   }
 
   .item6 {
-      width: 100%;
+      width: 300px;
       background-color: rgb(0, 0, 0);
       border: 5px solid white;
       background-size: 75%;
@@ -325,3 +323,60 @@
       transition: all 0.9s;
   }
 
+  .item7 {
+      width: 300px;
+      background-color: rgb(0, 0, 0);
+      border: 5px solid white;
+      background-size: 65%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url(imagenes.png/cambios\ 7);
+      filter: grayscale(100%);
+      transition: all 0.9s;
+  }
+
+  .item8 {
+      width: 300px;
+      background-color: rgb(0, 0, 0);
+      border: 5px solid white;
+      background-size: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url(imagenes.png/cambios\ 8);
+      filter: grayscale(100%);
+      transition: all 0.9s;
+  }
+
+  .item9 {
+      width: 300px;
+      background-color: rgb(0, 0, 0);
+      border: 5px solid white;
+      background-size: 65%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url(imagenes.png/cambios\ 9);
+      filter: grayscale(100%);
+      transition: all 0.9s;
+  }
+
+@media (max-width: 768px) {
+      .contenedor-productos {
+
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: repeat(4,300px)
+      }
+}
+
+@media (max-width: 450px) {
+      .contenedor-productos {
+
+            grid-template-columns: 1fr ;
+            grid-template-rows: repeat(9,300px)
+      }
+}
+
+main { 
+
+      background-color: black;
+      width: auto;
+ }
